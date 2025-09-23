@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <div dir="container">
+        <form action="/action_page.php" method="get">
+            <fieldset>
+                <legend>Datos Básicos</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí">
+                
+                <label for="contraseña">Contraseña: </label>
+                <input type="password" id="contraseña" name="contraseña">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="ej: yo@tu.es">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label for="sitioweb">Sitio Web:</label>
+                <input type="text" id="sitioweb" name="sitioweb">
+
+                <label for="soloLectura">Campo de solo lectura</label>
+                <input type="text" id="soloLectura" name="soloLectura" value="Este valor no se puede cambiar" readonly>
+
+                <label for="desabilitado">Campo desabilitado</label>
+                <input type="text" id="desabilitado" name="desabilitado" placeholder="Este valor no se envía" disabled>
+            </fieldset>
+
+            <fieldset>
+                <legend>Opciones y Seleciones</legend>
+
+                <label for="genero">Género: </label>
+                <input type="radio" id="hombre" name="genero" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="genero" value="mujer">
+                <label for="mujer">Mujer</label>
+                
+                <label for="dispositivos">Dispositivos: </label>
+                <input type="checkbox" id="dispositivos" name="PC" value="PC">
+                <label for="PC">PC</label>
+                <input type="checkbox" id="dispositivos" name="Tablet" value="Tablet">
+                <label for="Tablet">Tablet</label>
+                <input type="checkbox" id="dispositivos" name="Movil" value="Movil">
+                <label for="Movil">Móvil</label>
+
+                <label for="provincia">Provincia</label>
+                <select id="provincia" name="provincia">
+                    <option value="malaga">Málaga</option>
+                    <option value="sevilla">Sevilla</option>
+                    <option value="granada">Granada</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="jaen">Jaén</option>
+                    <option value="huelva">Huelva</option>
+                    <option value="cadiz">Cádiz</option>
+                    <option value="almeria">Almería</option>
+                </select>
+
+                <label for="editor" >Editor de código favorito:</label>
+                <input type="text" name="editor" id="editor">
+            </fieldset>
+
+            <fieldset>
+                <legend>Fechas, Números y Rangos</legend>
+
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento">
+
+                <label for="hora">Hora de la cita:</label>
+                <input type="time" id="hora" name="hora">
+
+                <label for="semana">Semana del año: </label>
+                <input type="week" id="semana" name="semana">
+
+                <label for="mes">Mes de facturación: </label>
+                <input type="month" id="mes" name="mes">
+
+                <label for="fechayhora">Fecha y horas exactas:</label>
+                <input type="datetime-local" id="fechayhora" name="fechayhora">
+
+                <label for="numero">Cantidad (entre 10 y 50, en pasos de 5):</label>
+                <input type="number" id="numero" name="numero" min="10" max="50" step="5">
+
+                <label for="nivel">Nivel de satisfacción (0 - 100):</label>
+                <input type="range" id="nivel" name="nivel" min="0" max="100">
+
+                <label for="color">Color Favorito:</label>
+                <input type="color" id="color" name="color">
+
+                <label for="buscar">Buscar en el sitio:</label>
+                <input type="search" id="buscar" name="buscar">
+            </fieldset>
+
+            <fieldset>
+                <legend>Archivos, Texto y Progreso</legend>
+
+                <label for="archivo">Subir archivo (se puede subir varios)</label>
+                <input type="file" id="archivo" name="archivo" multiple>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+                
+                <label for="progDeter">Progreso de la tarea (Determinado)</label>
+                <progress id="progDeter" name="progDeter" value="70" max="100"></progress>
+
+                <label for="proInde">Conectando... (Indeterminado)</label>
+                <progress id="proInde" name="proInde"></progress>
+            </fieldset>
+
+            <fieldset>
+                <legend>Acciones</legend>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
